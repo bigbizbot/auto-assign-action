@@ -6,12 +6,12 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v6
 
-      - name: setup node 12.x
-        uses: actions/setup-node@v1
+      - name: setup node
+        uses: actions/setup-node@v6
         with:
-          node-version: '12.x'
+          node-version-file: ./.node-version
 
       - name: install
         run: npm install

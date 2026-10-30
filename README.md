@@ -16,7 +16,7 @@ jobs:
   add-reviews:
     runs-on: ubuntu-latest
     steps:
-      - uses: kentaro-m/auto-assign-action@v1.2.1
+      - uses: kentaro-m/auto-assign-action@v2.0.1
         with:
           configuration-path: '.github/some_name_for_configs.yml' # Only needed if you use something other than .github/auto_assign.yml
 ```
@@ -156,7 +156,7 @@ filterLabels:
 
 ### Filter draft PRs
 
-The action will only run for non draft PRs. If you want to run for all PRs, you need to enable it to run o drafts
+The action will only run for non-draft PRs. If you want to run for all PRs, you need to enable it to run on drafts.
 
 ```yaml
 runOnDraft: true
